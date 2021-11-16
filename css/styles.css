@@ -109,6 +109,14 @@ p {
 /* Герой */
 
 .hero-section {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgi-hero.jpg);
   padding: 200px 0;
 
   background-color: var(--background-grey);
@@ -131,6 +139,7 @@ p {
   min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
+  border: none;
 
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -246,6 +255,29 @@ p {
 .team-position {
   font-size: 16px;
   line-height: 1.2;
+}
+
+/* Постоянные клиенты */
+
+.clients-section {
+  padding: 94px 0;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.logo-box {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.logo-box:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Футер */
