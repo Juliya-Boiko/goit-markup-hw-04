@@ -113,11 +113,6 @@ p {
   fill: var(--accent-color);
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
-  fill: var(--accent-color);
-}
-
 .header-line {
   border-bottom: 1px solid #eeeeee;
 }
@@ -129,12 +124,15 @@ p {
   margin: 0 auto;
   padding: 200px 0;
 
+  background-color: var(--background-grey);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bgi-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--background-grey);
   text-align: center;
 }
@@ -198,8 +196,6 @@ p {
 }
 
 .description-image {
-  width: 270px;
-  height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -305,12 +301,12 @@ p {
   justify-content: center;
   display: block;
   padding: 12px 12px;
-  
+
   fill: var(--logo-color);
 }
 
-.social-link:hover,
-.social-link:focus {
+.team-item .social-link:hover,
+.team-item .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -399,7 +395,7 @@ p {
 }
 
 .footer-section .social-link:hover,
-.social-link:focus {
+.footer-section .social-link:focus {
   background-color: var(--accent-color);
 }
 
